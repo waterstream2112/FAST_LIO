@@ -1,18 +1,42 @@
 {
     "configurations": [
         {
-            "name": "Linux",
+            "name": "linux_amd64",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${HOME}/ros2_ws/install/**",
+                "${NGHIA_WS}/install/**",
                 "/opt/ros/humble/include/**",
                 "/usr/include/pcl-1.12/**",
                 "/usr/include/**"
             ],
             "defines": [],
+            "intelliSenseMode": "linux-gcc-x64",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools",
             "compilerPath": "/usr/bin/gcc",
-            "cStandard": "c11",
-            "cppStandard": "c++14"
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
+        },
+        {
+            "name": "linux_arm64",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${NGHIA_WS}/install/**",
+                "/opt/ros/humble/include/**",
+                "/usr/include/pcl-1.12/**",
+                "/usr/include/**"
+            ],
+            "defines": [],
+            "intelliSenseMode": "gcc-x64",
+            "cStandard": "gnu11",
+            "cppStandard": "c++14",
+            "configurationProvider": "ms-vscode.cmake-tools",
+            "compilerPath": "/usr/bin/gcc",
+            "browse": {
+                "limitSymbolsToIncludedHeaders": true
+            }
         }
     ],
     "version": 4
