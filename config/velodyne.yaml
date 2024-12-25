@@ -12,8 +12,8 @@
         common:
             lid_topic:  "velodyne_points"
             imu_topic:  "imu/data"
-            odom_frame_id: "odom"
-            base_link_frame_id: "base_link"
+            camera_init_frame_id: "camera_init"
+            body_frame_id: "livox_frame"
             time_sync_en: false         # ONLY turn on when external time synchronization is really not possible
             time_offset_lidar_to_imu: 0.0 # Time offset between lidar and IMU calibrated by other algorithms, e.g. LI-Init (can be found in README).
                                         # This param will take effect no matter what time_sync_en is. So if the time offset is not known exactly, please set as 0.0
